@@ -35,7 +35,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="./img/logo.svg" alt="Logoipsum" />
+        <img className="logo" src="./img/logo.png" alt="Logoprofile" />
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -69,12 +69,13 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="MyPortfolio"
+              to="mySkills"
               className="navbar--content"
             >
-              Portfolio
+              Skills
             </Link>
           </li>
+
           <li>
             <Link
               onClick={closeMenu}
@@ -83,12 +84,13 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="AboutMe"
+              to="Experience"
               className="navbar--content"
             >
-              About Me
+              Experience
             </Link>
           </li>
+
           <li>
             <Link
               onClick={closeMenu}
@@ -97,26 +99,47 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="testimonial"
+              to="Projects"
               className="navbar--content"
             >
-              Testimonials
+              Projects
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Education"
+              className="navbar--content"
+            >
+              Education
+            </Link>
+          </li>
+        
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Contact"
+              className="navbar--content"
+            >
+              Contact
             </Link>
           </li>
         </ul>
       </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="btn btn-outline-primary"
-      >
-        Contact Me
-      </Link>
+        <a href="https://www.linkedin.com/in/elyes-besbes-ict-engineer/" target="_blank">
+          <button className="btn btn-outline-primary">Visit LinkedIn</button>
+        </a>
     </nav>
   );
 }

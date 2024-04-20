@@ -2,13 +2,14 @@ import data from "../../data/index.json";
 
 export default function MyPortfolio() {
   return (
-    <section className="portfolio--section" id="MyPortfolio">
+    <section className="portfolio--section" id="Projects">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
           <p className="sub--title">Recent Projects</p>
-          <h2 className="section--heading">My Portfolio</h2>
+          <h2 className="skills--section--heading">My Projects</h2>
         </div>
         <div>
+          <a href="https://github.com/elybesbes" target="_blank">
           <button className="btn btn-github">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +27,8 @@ export default function MyPortfolio() {
             </svg>
             Visit My GitHub
           </button>
+          </a>
+          
         </div>
       </div>
       <div className="portfolio--section--container">
@@ -39,6 +42,7 @@ export default function MyPortfolio() {
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
+              <a href={item.realink} target="_blank">
               <p className="text-sm portfolio--link">
                 {item.link}
                 <svg
@@ -57,6 +61,7 @@ export default function MyPortfolio() {
                   />
                 </svg>
               </p>
+              </a>
             </div>
           </div>
         ))}

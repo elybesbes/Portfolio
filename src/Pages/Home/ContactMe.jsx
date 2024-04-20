@@ -5,7 +5,7 @@ export default function ContactMe() {
         <p className="sub--title">Get In Touch</p>
         <h2>Contact Me</h2>
         <p className="text-lg">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
+          You will get a response as soon as possible
         </p>
       </div>
       <form className="contact--form--container">
@@ -55,9 +55,9 @@ export default function ContactMe() {
           <span className="text-md">Choose a topic</span>
           <select id="choose-topic" className="contact--input text-md">
             <option>Select One...</option>
-            <option>Item 1</option>
-            <option>Item 2</option>
-            <option>Item 3</option>
+            <option>Hiring Opportunity</option>
+            <option>Part-Time Job Opportunity</option>
+            <option>Freelence Project</option>
           </select>
         </label>
         <label htmlFor="message" className="contact--label">
@@ -68,10 +68,6 @@ export default function ContactMe() {
             rows="8"
             placeholder="Type your message..."
           />
-        </label>
-        <label htmlFor="checkboc" className="checkbox--label">
-          <input type="checkbox" required name="checkbox" id="checkbox" />
-          <span className="text-sm">I accept the terms</span>
         </label>
         <div>
           <button className="btn btn-primary contact--form--btn">Submit</button>

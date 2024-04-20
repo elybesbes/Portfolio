@@ -2,76 +2,113 @@
   "skills": [
     {
       "id": "1",
-      "src": "./img/product-chain-1.png",
+      "src": "./img/front.png",
       "title": "Front-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "Developing beautiful, responsive, and dynamic web and mobile interfaces is a result of my strong design thinking and vision."
     },
     {
       "id": "2",
-      "src": "./img/tag-1.png",
+      "src": "./img/back.png",
       "title": "Back-End",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "description": "Creating robust and secure backend services to manage frontend requests and seamlessly retrieve data from databases."
     },
     {
       "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "UI & UX Design",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/devops.png",
+      "title": "DevOps",
+      "description": "Implementing DevOps practices for automated system optimization and continuous deployment."
     },
     {
       "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "Webflow Development",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/ml.png",
+      "title": "Machine Learning",
+      "description": "Writing code to preprocess data and train algorithms, resulting in the creation of robust machine learning models."
     }
   ],
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/dwira.png",
+      "title": "Tunisian Guest Houses Website",
+      "description": "Exposing the beauty of Tunisian guest houses facilitating the reservation and paiment process",
+      "link": "View In Github",
+      "realink": ""
     },
     {
       "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/bikefest.png",
+      "title": "Biking Event Website",
+      "description": "Exposing information about the event, previous editions, program and registration.",
+      "link": "View In Github",
+      "realink": "https://github.com/elybesbes/Bikeing-Event-Website"
     },
     {
       "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/netdash.png",
+      "title": "Network Performance Dashboard",
+      "description": "Facilitating network performance monitoring using real time charts.",
+      "link": "View In Github",
+      "realink": "https://github.com/elybesbes/Network-Performance-Dashboard"
+    },
+    {
+      "id": "4",
+      "src": "./img/mlproj.png",
+      "title": "Real-Time Encrypted Network Traffic Classification",
+      "description": "ML model capble of classifying encrypted network traffic.",
+      "link": "View In Github",
+      "realink": "https://github.com/elybesbes/Netowrk-Classification-ML"
+    },
+    {
+      "id": "4",
+      "src": "./img/petpetni.png",
+      "title": "Pet Care Mobile Application",
+      "description": "Reminder for medication and appointments, closest vet on map and healthy tips for pet owners.",
+      "link": "View In Github",
+      "realink": ""
     }
   ],
-  "testimonial": [
+  "education": [
     {
       "id": "1",
-      "count": "5",
-      "src": "./img/avatar-image.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Dianne Russel",
-      "author_designation": "Starbucks"
+      "name": "Higher School of Communication of Tunis",
+      "date": "2022 - 2025",
+      "src": "./img/supcom.png",
+      "diploma": "Information and Communication Technologies Engineering"
     },
     {
       "id": "2",
-      "count": "5",
-      "src": "./img/avatar-image-1.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kristin Watson",
-      "author_designation": "Louis Vuitton"
+      "name": "Higher Institute of Technological Studies in Communication of Tunis",
+      "date": "2019 - 2022",
+      "src": "./img/isetcom.png",
+      "diploma": "Information and Communication Technologies Bachelor Degree"
     },
     {
       "id": "3",
-      "count": "5",
-      "src": "./img/avatar-image-2.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "author_name": "Kathryn Murphy",
-      "author_designation": "McDonald's"
+      "name": "Carthage Presidence High School",
+      "date": "2015 - 2019",
+      "src": "./img/lycee.png",
+      "diploma": "Baccalaureate in Mathematics"
+    }
+  ],
+  "experience": [
+    {
+      "id": "1",
+      "company": "Huawei Tunisia",
+      "title": "Web Developer",
+      "date": "June 2023 -  August 2023",
+      "src": "./img/huawei.png",
+      "description": "Developed a dashboard to aid the radio team in monitoring network performance for their customers.",
+      "technologies": "HTML, CSS, JavaScript PHP, MySql"
+    },
+    {
+      "id": "2",
+      "company": "Pyxis IT",
+      "title": "Machine Learning Developer",
+      "date": "January 2022 - June 2022",
+      "src": "./img/pyxis.png",
+      "description": "Built Machine Learning model for real-time encrypted network traffic classification.",
+      "technologies": "NFStream, Pandas, Scikit-Learn, Matplotlib, Seaborn, Numpy, XGBoost, Grafana"
     }
   ]
+
 }

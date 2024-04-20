@@ -24,6 +24,7 @@ p {
   --darkblue: #1c1e53;
   --black: #000000;
   --white: #ffffff;
+  --grey: #838383;
 }
 .btn {
   font-family: "Roboto";
@@ -51,6 +52,7 @@ p {
   color: var(--primary);
   background-color: var(--white);
   border: 1px solid var(--primary);
+  margin-left: 10px;
 }
 .btn-outline-primary:hover {
   color: var(--white);
@@ -84,6 +86,10 @@ p {
 /* Main Headings */
 
 /* Heading 1 */
+.logo{
+  margin-top: 10px;
+  width: 130px;
+}
 h1 {
   font-size: 56px;
   font-weight: 700;
@@ -140,7 +146,7 @@ h2 {
   display: flex;
   align-items: flex-start;
 }
-/* Portfolio, Testimonial & Contact Me */
+/* Portfolio, education & Contact Me */
 .sub--title {
   color: var(--heading-color);
   font-size: 16px;
@@ -230,7 +236,7 @@ h2 {
 .hero--section--img {
   display: flex;
 }
-.hero--section--img > img {
+.hero--section--img img {
   width: 100%;
   height: 100%;
 }
@@ -245,6 +251,13 @@ h2 {
   align-items: flex-start;
   gap: 106.667px;
 }
+.education--section--heading{
+  color: var(--heading-color);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+}
+
 .skills--section--heading {
   color: var(--heading-color);
   font-size: 64px;
@@ -341,6 +354,15 @@ h2 {
   align-items: flex-start;
   gap: 21.3px;
 }
+
+
+
+.education--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21.3px;
+}
 .portfolio--section--container {
   display: flex;
   align-items: center;
@@ -391,49 +413,55 @@ h2 {
 }
 /* Portfolio Ends */
 
-/* Testimonial */
-.testimonial--section {
-  display: flex;
-  padding: 112px 84.3px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 80px;
-  background-color: var(--bg-shade);
+/* education */
+.education--section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 30px 84.3px;
+}
+.specifica{
+  margin-top: 20px;
 }
 .sections--heading {
   color: var(--heading-color);
 }
-.testimonial--section--card {
+.education--section--card {
+  cursor: pointer;
+  background-color: var(--white);
   display: flex;
   padding: 42.6px;
+  margin-top: 20px;
   flex-direction: column;
   align-items: flex-start;
   gap: 42.6px;
   flex: 1 0 0;
   border-radius: 8px;
-  border: 1.33px solid #006b6a;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 0.1s ease-in-out;
 }
-.testimonial--section--card--reviews {
-  display: flex;
-  align-items: flex-start;
-  gap: 5.33px;
+
+.education--section--card:hover{
+  background-color: var(--bg-shade);
 }
-.testimonial--section--card--author--detail {
+
+.education--section--card--author--detail {
   display: flex;
   align-items: center;
   gap: 21.3px;
 }
-.testimonial--author--name {
+.education--author--name {
   font-weight: 600;
   color: var(--heading-color);
 }
-.testimonial--author--designation {
+.education--author--designation {
   color: var(--darkblue);
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
 }
-/* Testimonial Ends */
+/* education Ends */
 .contact--section {
   display: flex;
   padding: 150px 85px;
@@ -483,6 +511,9 @@ select {
     white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>')
     white no-repeat calc(100% - 20px); /* Better placement regardless of input width */
+}
+.subsub-title{
+  color: var(--grey);
 }
 /*For IE*/
 select::-ms-expand {
@@ -541,6 +572,10 @@ input[type="checkbox"] {
   flex-shrink: 0;
   text-decoration: none;
 }
+
+a{
+  text-decoration: none;
+}
 .divider {
   margin: 106px 0 42.67px;
   height: 1.333px;
@@ -581,6 +616,7 @@ input[type="checkbox"] {
     gap: 16px;
   }
   .skills--section--card {
+    cursor: pointer;
     gap: 28px;
   }
   .skills--section--card--content {
@@ -610,9 +646,17 @@ input[type="checkbox"] {
   .footer--content {
     text-align: center;
   }
+  .education--section--container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;    
+  }
+
   .skills--section--container,
   .about--section,
   .portfolio--section--container,
+  .education--section--container,
   .portfolio--container-box,
   .footer--link--container,
   .footer--items > ul,
@@ -630,7 +674,6 @@ input[type="checkbox"] {
     gap: 30px;
   }
   .skills--section,
-  .testimonial--section,
   .contact--section,
   .footer--container {
     gap: 20px;
@@ -642,9 +685,11 @@ input[type="checkbox"] {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .testimonial--section--card {
+  .education--section--card {
     padding: 25px;
   }
+  
+
   .hero--section--title,
   .skills--section--heading,
   .sections--heading {
@@ -688,7 +733,7 @@ input[type="checkbox"] {
 .nav__hamburger__line {
   display: block;
   height: 0.188rem;
-  width: 100%;
+  width: 70%;
   background-color: #000000;
   border-radius: 0.625rem;
   transition: all ease-in-out 0.2s;
@@ -708,7 +753,7 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255);
-    top: -20rem;
+    top: -50rem;
     left: 0;
     width: 100%;
     transition: all ease-in-out 0.4s;
@@ -718,7 +763,7 @@ input[type="checkbox"] {
     align-items: center;
     width: 100%;
     padding: 3rem 0 0.6rem;
-    z-index: -100;
+    z-index: -200;
   }
   .navbar--items ul li {
     text-align: center;
