@@ -1,2 +1,2 @@
 # Personal Portfolio
-This is myy personnal portfolio developed using React
+This is my personnal portfolio developed using React
