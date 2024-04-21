@@ -57,7 +57,7 @@ export default function ContactMe() {
             <option>Select One...</option>
             <option>Hiring Opportunity</option>
             <option>Part-Time Job Opportunity</option>
-            <option>Freelence Project</option>
+            <option>Freelance Project</option>
           </select>
         </label>
         <label htmlFor="message" className="contact--label">
